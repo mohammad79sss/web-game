@@ -52,21 +52,28 @@ body{
 }
 /*character-1*/
 /*
-#character {
-    width: 126px;
-    height: 150px;
-    position: absolute;
-    bottom: 30px;
-    left: 15px;
-}
-*/
-/*character-2*/
-
 #character{
     width: 75px;
     height: 150px;
     position: absolute;
     bottom: 50px;
+}
+
+*/
+/*character-2*/
+#character {
+    width: 126px;
+    height: 150px;
+    position: absolute;
+    bottom: 29px;
+    left: 15px;
+}
+#jumpedCharacter{
+    width: 126px;
+    height: 150px;
+    position: absolute;
+    bottom: 90px;
+    left: 15px;
 }
 
 
