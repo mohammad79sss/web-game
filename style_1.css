@@ -23,14 +23,6 @@ body{
 }
 
 
-#trap {
-    width: 80px;
-    height: 50px;
-    background-color: #FF013C;
-    position: absolute;
-    right: 0;
-    bottom: 55px;
-}
 
 
 #items{
@@ -72,10 +64,19 @@ body{
     width: 126px;
     height: 150px;
     position: absolute;
-    bottom: 90px;
+    bottom: 140px;
     left: 15px;
-}
+    animation: jumping 2s 1;
 
+}
+@keyframes jumping {
+    0% {
+        bottom: 140px;
+    }
+    100% {
+        bottom: 29px;
+    }
+}
 
 img#characterImg{
     width: 100%;
@@ -102,6 +103,105 @@ img#trapImg{
 #scoreNumber{
     position: absolute;
 }
+#trap {
+    width: 80px;
+    height: 50px;
+    /*background-color: #FF013C;*/
+    position: absolute;
+    right: 0;
+    bottom: 55px;
+    animation: trapAnimation 3s infinite;
+}
+
+
+@keyframes trapAnimation {
+    0% {
+        right: 0px;
+
+    }
+
+    5% {
+        right: 35px;
+
+    }
+    10% {
+        right: 70px;
+
+    }
+    15% {
+        right: 105px;
+
+    }
+    20% {
+        right: 140px;
+
+    }
+    25% {
+        right: 175px;
+
+    }
+    30% {
+        right: 210px;
+
+    }
+    35% {
+        right: 245px;
+
+    }
+    40% {
+        right: 280px;
+
+    }
+    45% {
+        right: 315px;
+
+    }
+
+    50% {
+        right: 350px;
+
+    }
+    55% {
+        right: 385px;
+
+    }
+    60% {
+        right: 420px;
+
+    }
+    65% {
+        right: 455px;
+
+    }
+    70% {
+        right: 490px;
+
+    }
+    75% {
+        right: 525px;
+
+    }
+    80% {
+        right: 560px;
+
+    }
+    85% {
+        right: 595px;
+
+    }
+    90% {
+        right: 630px;
+
+    }
+    95% {
+        right: 665px;
+
+    }
+    100% {
+        right: 700px;
+    }
+}
+
 
 .button-49,
 .button-49:after {
