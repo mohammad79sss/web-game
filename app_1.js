@@ -1,7 +1,7 @@
 
 function jump(){
     document.getElementById("character").id = "jumpedCharacter";
-    setTimeout(reverse, 2000);
+    setTimeout(reverse, 1000);
 }
 function reverse(){
     document.getElementById("jumpedCharacter").id = "character";
@@ -20,10 +20,9 @@ function calculateDistance(){
     var trapPos = document.getElementById("trap").offsetLeft;
     let distance = trapPos-characterPos;
     console.log(distance);
-    if(distance==6){
+    if((0<distance && distance<20) || (-17<distance && distance<0)){
         const score = upto-7;
-        alert("you lose!!!   " +
-            "your score : "+score);
+        alert("you lose!!!   " + "\n" +"your score : "+score);
         location.reload();
     }
 }
