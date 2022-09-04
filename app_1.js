@@ -22,6 +22,7 @@ function calculateDistance(){
     console.log(distance);
     if((0<distance && distance<50) || (-200<distance && distance<0)){
         const score = upto-7;
+        document.getElementById("playingMusic").setAttribute("src","musics/TunePocket-Retro-Fun-Energetic-Rock-Logo-Preview.mp3");
         alert("you lose!!!   " + "\n" +"your score : "+score);
         location.reload();
     }
