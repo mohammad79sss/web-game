@@ -66,7 +66,7 @@ body{
     position: absolute;
     bottom: 120px;
     left: 15px;
-    animation: jumping 1s 1;
+    animation: jumping 500ms 1;
 
 }
 @keyframes jumping {
@@ -110,6 +110,7 @@ img#trapImg{
     position: absolute;
     right: 0;
     bottom: 55px;
+    overflow: hidden;
     animation: trapAnimation 3s infinite;
 }
 
